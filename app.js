@@ -815,7 +815,7 @@ async function decryptMessage() {
     void byId("dec-results").offsetWidth;
     byId("dec-results").classList.add("result-arrive");
     scrambleReveal(byId("dec-final-text"), lastDecryptedText || "(mensaje vacío)");
-    renderLetterMatrix("dec-letter-matrix", lastDecryptedText, dimension, "column");
+    renderLetterMatrix("dec-letter-matrix", lastDecryptedText, dimension, "row");
     byId("dec-process").hidden = true;
     byId("dec-process-toggle").textContent = "🔍 Mostrar proceso paso a paso";
     byId("dec-process-toggle").setAttribute("aria-expanded", "false");
